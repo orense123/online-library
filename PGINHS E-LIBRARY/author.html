@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGINHS E-Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #32da10;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #eee;
+            padding: 1em;
+        }
+
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .author {
+            margin-bottom: 2em;
+            border: 1px solid #f45f09;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .author img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 1em;
+        }
+
+        .contact-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Padre Garcia Integrated National High School E-Library</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="terms.html">Terms and Condition</a>
+    </nav>
+
+    <main>
+        <h2>About Us</h2>
+        <p>Welcome to PGINHS E-Library! We are dedicated to providing a vast collection of digital books for your reading pleasure.</p>
+        <p>If you have any questions or feedback, feel free to contact us at <a href="mailto:pginhs.e-library@gmail.com">pginhs.e-library@gmail.com</a>.</p>
+
+        <h2>Authors</h2>
+        <div class="author">
+            <img src="image/clara.jpg" alt="Author 1">
+            <div>
+                <h3>Orense, Mary Clara A.</h3>
+                <p>STEM GALILEO</p>
+                <p>SY 2023 - 2024</p>
+                <button class="contact-button" onclick="contactAuthor('orenseclara@gmail.com')">Contact Author</button>
+            </div>
+        </div>
+
+        <div class="author">
+            <img src="image/tin.jpg" alt="Author 2">
+            <div>
+                <h3>Visleño, Kristine Anne M.</h3>
+                <p>STEM GALILEO</p>
+                <p>SY 2023 - 2024</p>
+                <button class="contact-button" onclick="contactAuthor('kristineannevisleno@gmail.com')">Contact Author</button>
+            </div>
+        </div>
+
+        <div class="author">
+            <img src="image/rus.jpg" alt="Author 1">
+            <div>
+                <h3>Lañoza, John Russel E.</h3>
+                <p>STEM GALILEO</p>
+                <p>SY 2023 - 2024</p>
+                <button class="contact-button" onclick="contactAuthor('johnrussellanoza@gmail.com')">Contact Author</button>
+            </div>
+        </div>
+
+        <div class="author">
+            <img src="image/KIKO.jpg" alt="Author 2">
+            <div>
+                <h3>Cagat, Mhike Angello A.</h3>
+                <p>STEM GALILEO</p>
+                <p>SY 2023 - 2024</p>
+                <button class="contact-button" onclick="contactAuthor('author2@example.com')">Contact Author</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 PGINHS E-Library
+    </footer>
+
+    <script>
+        function contactAuthor(email) {
+            window.location.href = "mailto:" + email;
+        }
+    </script>
+
+</body>
+</html>

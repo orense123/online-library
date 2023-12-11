@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Policy Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #terms-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #continue-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    
+<div id="terms-container">
+    <h2>TERMS AND CONDITIONS</h2>
+    <form id="terms-form">
+        <p>
+            Welcome to PGINHS E-LIBRARY!  
+        </p>
+        <body>
+
+            <p>Please read and agree to the terms & condition and privacy policy before proceeding.</p>
+            
+        
+            <h3>1. User Agreement</h3>
+            <p>Users, specifically Grade 12 students enrolled in Padre Garcia Integrated National High School 
+                for the school year 2023-2024, have the right to access and navigate the e-library website for research purposes.</p>
+        
+            <h3>2. Access and Registration</h3>
+            <p>To enter the e-library portal, users must provide their full name (first name, middle initial, last name, and name extension)
+                 along with their learner's reference number (LRN) for verification as a Grade 12 student at PGINHS.</p>
+        
+            <h3>3. Intellectual Property</h3>
+            <p>Users are prohibited from taking screenshots of uploaded book contents, and plagiarism is strictly prohibited.
+                Permission must be obtained from book or research authors.</p>
+        
+            <h3>4. Changes to Terms</h3>
+            <p>The terms may be revised by the creator without prior notice. By continuing to navigate this website, users agreed to be bound by the current version of the terms.</p>
+        
+            <h3>5. Changes to Terms</h3>
+            <p>We may revise these terms at any time without notice. By using our website, you agree to be bound by the current version of these terms.</p>
+           
+            <h2>PRIVACY POLICY</h2>
+        
+            <p>This Privacy Policy describes how we collect, use, and protect your personal information when you use our website.</p>
+        
+            <h3>1. Information Collection and Use</h3>
+            <p>Personal information, including full names and LRNs, is obtained legally from the school registrar. This data is exclusively used to facilitate students' access to the e-library portal and is kept confidential for research purposes only.</p>
+        
+            <h3>2. Policy Changes</h3>
+            <p>The creator reserves the right to modify privacy policies without notice. Users agree to adhere to the current version of these policies when using the website.</p>
+        
+  
+        </body>
+        </html>
+        <label>
+            <input type="checkbox" id="agree-checkbox"> I agree to the terms and policy
+        </label>
+        <br><br>
+        <button type="button" id="continue-btn" onclick="checkAgreement()">Continue</button>
+    </form>
+</div>
+
+<script>
+    function checkAgreement() {
+        var checkbox = document.getElementById('agree-checkbox');
+
+        if (checkbox.checked) {
+            // Checkbox is checked, allow the user to continue (you can redirect to another page or perform other actions here)
+            alert('You have agreed to the terms and policy.');
+            window.location.href = 'login.html';
+        } else {
+            // Checkbox is not checked, show an alert or take other actions to inform the user
+            alert('Please agree to the terms and policy before continuing.');
+        }
+    }
+</script>
+
+</body>
+</html>
